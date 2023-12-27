@@ -11,6 +11,9 @@
 		B61330542B3C9EDC00E3060C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61330532B3C9EDC00E3060C /* ContentView.swift */; };
 		B61330562B3C9EDE00E3060C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61330552B3C9EDE00E3060C /* Assets.xcassets */; };
 		B61330592B3C9EDE00E3060C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61330582B3C9EDE00E3060C /* Preview Assets.xcassets */; };
+		B67F600C2B3CA381006675DD /* ViewModelSystemValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F600B2B3CA381006675DD /* ViewModelSystemValues.swift */; };
+		B67F600E2B3CA475006675DD /* PhoneInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67F600D2B3CA475006675DD /* PhoneInfoView.swift */; };
+		B6BABA272B3CA61B0055E135 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B6BABA262B3CA61B0055E135 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		B61330532B3C9EDC00E3060C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B61330552B3C9EDE00E3060C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B61330582B3C9EDE00E3060C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B67F600B2B3CA381006675DD /* ViewModelSystemValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelSystemValues.swift; sourceTree = "<group>"; };
+		B67F600D2B3CA475006675DD /* PhoneInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BABA272B3CA61B0055E135 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				B61330512B3C9EDC00E3060C /* SystemValuesPhoneApp.swift */,
+				B67F600B2B3CA381006675DD /* ViewModelSystemValues.swift */,
 				B61330532B3C9EDC00E3060C /* ContentView.swift */,
+				B67F600D2B3CA475006675DD /* PhoneInfoView.swift */,
 				B61330552B3C9EDE00E3060C /* Assets.xcassets */,
 				B61330572B3C9EDE00E3060C /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = SystemValuesPhone;
+			packageProductDependencies = (
+				B6BABA262B3CA61B0055E135 /* Alamofire */,
+			);
 			productName = SystemValuesPhone;
 			productReference = B613304E2B3C9EDC00E3060C /* SystemValuesPhone.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = B61330452B3C9EDC00E3060C;
+			packageReferences = (
+				B6BABA252B3CA61B0055E135 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B613304F2B3C9EDC00E3060C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67F600C2B3CA381006675DD /* ViewModelSystemValues.swift in Sources */,
 				B61330542B3C9EDC00E3060C /* ContentView.swift in Sources */,
 				B61330522B3C9EDC00E3060C /* SystemValuesPhoneApp.swift in Sources */,
+				B67F600E2B3CA475006675DD /* PhoneInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +298,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Stavrova-Ekaterina.SystemValuesPhone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,9 +330,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Stavrova-Ekaterina.SystemValuesPhone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6BABA252B3CA61B0055E135 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6BABA262B3CA61B0055E135 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6BABA252B3CA61B0055E135 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B61330462B3C9EDC00E3060C /* Project object */;
 }

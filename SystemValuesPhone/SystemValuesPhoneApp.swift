@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SystemValuesPhoneApp: App {
+    @StateObject private var modelSystemValues = ViewModelSystemValuesOfPhone()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelSystemValues)
         }
     }
 }
