@@ -1,6 +1,8 @@
 # SystemValuesPhone
 This Swift project provides a Model for retrieving and observing various system-related data on an iOS device. The system values include WiFi download and upload speeds, iOS version, RAM usage, CPU usage, and storage information.
-![Альтернативный текст](SystemValuesPhone/Preview.png)
+
+
+![Альтернативный текст](Preview.png)
 
 
 Dependencies
